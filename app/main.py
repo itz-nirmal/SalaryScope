@@ -281,8 +281,16 @@ if 'predicted_salary' not in st.session_state:
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load('models/trained/salary_prediction_model_xgboost.pkl')
-        with open('models/trained/model_metadata.json', 'r') as f:
+        import os
+        # Get the parent directory (project root)
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(current_dir)
+        
+        model_path = os.path.join(project_root, 'models', 'trained', 'salary_prediction_model_xgboost.pkl')
+        metadata_path = os.path.join(project_root, 'models', 'trained', 'model_metadata.json')
+        
+        model = joblib.load(model_path)
+        with open(metadata_path, 'r') as f:
             metadata = json.load(f)
         return model, metadata
     except Exception as e:
