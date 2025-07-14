@@ -30,7 +30,7 @@ st.markdown("""
     }
     .sub-header {
         font-size: 1.4rem;
-        color: #112D4E;
+        color: #FBF5DE;
         text-align: center;
         margin-bottom: 1.5rem;
         font-weight: 700;
