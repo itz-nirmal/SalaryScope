@@ -1,0 +1,23 @@
+{
+    "model_name": "XGBoost",
+    "features": {
+        "numerical": [
+            "Age",
+            "Years of Experience",
+            "Work Hours"
+        ],
+        "categorical": [
+            "Gender",
+            "Education Level",
+            "Job Title",
+            "Industry"
+        ]
+    },
+    "performance": {
+        "r2_score": 0.26323896646499634,
+        "rmse": 27952.28162422524,
+        "mae": 19825.171875,
+        "mean_percentage_error": 46.39619311855564
+    },
+    "training_date": "2025-07-14 17:22:29"
+}
