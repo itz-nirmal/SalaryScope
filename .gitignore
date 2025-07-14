@@ -148,7 +148,6 @@ ehthumbs.db
 Thumbs.db
 
 # Project specific
-*.pkl
 *.joblib
 temp/
 logs/
